@@ -1,0 +1,57 @@
+@keyframes hero-content-in {
+  from { opacity: 0; transform: translateY(17px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes hero-image-in {
+  from { transform: scale(1.045); opacity: .35; }
+  to { transform: scale(1); opacity: .8; }
+}
+
+@keyframes hero-image-drift {
+  from { transform: scale(1); }
+  to { transform: scale(1.075); }
+}
+
+@keyframes ornament-drift {
+  0%, 100% { transform: translate3d(0, 0, 0); }
+  50% { transform: translate3d(0, -13px, 0); }
+}
+
+.hero::before { animation: ornament-drift 12s ease-in-out infinite; }
+.hero::after { animation: ornament-drift 16s ease-in-out infinite reverse; }
+.js-ready .hero__eyebrow,
+.js-ready .hero h1,
+.js-ready .hero__tagline,
+.js-ready .hero__description,
+.js-ready .hero__actions { animation: hero-content-in .72s cubic-bezier(.2, .7, .2, 1) both; }
+.js-ready .hero h1 { animation-delay: .08s; }
+.js-ready .hero__tagline { animation-delay: .16s; }
+.js-ready .hero__description { animation-delay: .23s; }
+.js-ready .hero__actions { animation-delay: .3s; }
+.js-ready .hero__image { animation: hero-image-in 1.15s ease both, hero-image-drift 24s ease-in-out 1.15s infinite alternate; }
+.js-ready .reveal { opacity: 0; transform: translateY(18px); transition: opacity .65s ease, transform .65s cubic-bezier(.2, .7, .2, 1); }
+.js-ready .reveal.is-visible { opacity: 1; transform: translateY(0); }
+.js-ready .food-card { animation: card-appear .45s ease both; }
+.js-ready .food-card:nth-child(2) { animation-delay: .06s; }
+.js-ready .food-card:nth-child(3) { animation-delay: .12s; }
+.js-ready .food-card:nth-child(4) { animation-delay: .18s; }
+.js-ready .food-card:nth-child(5) { animation-delay: .24s; }
+.js-ready .food-card:nth-child(6) { animation-delay: .3s; }
+.js-ready .food-card:hover { animation: none; }
+
+@keyframes card-appear {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .js-ready .hero__eyebrow, .js-ready .hero h1, .js-ready .hero__tagline,
+  .js-ready .hero__description, .js-ready .hero__actions, .js-ready .hero__image,
+  .js-ready .reveal, .js-ready .food-card, .hero::before, .hero::after {
+    animation: none !important;
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+}

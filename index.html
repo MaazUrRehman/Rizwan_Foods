@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#064b32">
+  <meta name="description" content="Explore the Rizwan Foods menu. Homemade food, where taste meets art.">
+  <title>Rizwan Foods | Homemade Delights</title>
+  <link rel="icon" type="image/png" href="assets/logo/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <script src="js/modal.js" defer></script>
+  <script src="js/menu.js" defer></script>
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#menu-sections">Skip to menu</a>
+
+  <header class="site-header" id="top">
+    <div class="header-inner container">
+      <a class="header-contact" href="tel:+923432708942" aria-label="Call Rizwan Foods at 0343 2708942">
+        <span class="header-contact__icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path d="M7 3h3l2 5-2 1.5a15 15 0 0 0 4.5 4.5L16 12l5 2v3c0 1.1-.9 2-2 2C10.7 19 5 13.3 5 6c0-1.7.7-3 2-3Z"/></svg>
+        </span>
+        <span><small>Call us</small><strong>0343 2708942</strong></span>
+      </a>
+
+      <a class="brand" href="#top" aria-label="Rizwan Foods home">
+        <img src="assets/logo/logo.png" alt="Rizwan Foods — Homemade Delights" width="100" height="100">
+      </a>
+
+      <a class="header-order" href="https://wa.me/923432708942?text=Hello%20Rizwan%20Foods%2C%20I%20would%20like%20to%20place%20an%20order." target="_blank" rel="noopener noreferrer">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 11.7a8 8 0 0 1-11.8 7L4 20l1.3-4.1A8 8 0 1 1 20 11.7Z"/><path d="M9 8.5c.2-.5.5-.5.8-.5h.5c.2 0 .4.1.5.4l.7 1.6c.1.2.1.4 0 .6l-.5.7c-.2.2-.2.4 0 .6.5.8 1.2 1.4 2 1.8.2.1.4.1.6-.1l.7-.8c.2-.2.4-.2.6-.1l1.5.7c.3.1.4.3.4.5 0 .3-.2 1.1-.7 1.4-.5.4-1.1.5-1.8.3-1-.3-2.2-.9-3.5-2.1-1-.9-1.8-2.1-2-2.9-.3-.8 0-1.6.2-2.1Z"/></svg>
+        <span>Order on WhatsApp</span>
+        <span class="header-order__arrow" aria-hidden="true">↗</span>
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero__image" aria-hidden="true"></div>
+      <div class="hero__overlay" aria-hidden="true"></div>
+      <div class="hero__grain" aria-hidden="true"></div>
+      <div class="hero__content container">
+        <p class="hero__eyebrow"><span></span> RIZWAN FOODS · HOMEMADE DELIGHTS <span></span></p>
+        <h1 id="hero-title">A little taste<br>of <em>home.</em></h1>
+        <p class="hero__tagline">Where Taste Meets Art.</p>
+        <p class="hero__description">Explore our menu of authentic homemade food, prepared with care and made to be shared.</p>
+        <div class="hero__actions">
+          <a class="button button--gold" href="#menu-sections">Explore Our Menu <span aria-hidden="true">↓</span></a>
+          <a class="button button--light-outline" href="https://wa.me/923432708942?text=Hello%20Rizwan%20Foods%2C%20I%20would%20like%20to%20place%20an%20order." target="_blank" rel="noopener noreferrer">Order on WhatsApp <span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+      <div class="hero__side-label" aria-hidden="true">MADE WITH CARE · SHARED WITH LOVE</div>
+      <a class="hero__scroll" href="#menu-categories"><span></span> DISCOVER THE MENU</a>
+    </section>
+
+    <nav class="category-nav" id="menu-categories" aria-label="Food categories">
+      <div class="category-nav__inner container" id="category-nav-list"></div>
+    </nav>
+
+    <div class="menu-intro">
+      <div class="container menu-intro__inner reveal">
+        <p class="eyebrow eyebrow--green"><span></span> SOMETHING FOR EVERY TABLE <span></span></p>
+        <h2>Explore the <em>menu</em></h2>
+        <p>Browse our categories and find something to enjoy.</p>
+      </div>
+    </div>
+
+    <div class="menu-sections" id="menu-sections" aria-live="polite"></div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-main container">
+      <div class="footer-brand">
+        <a href="#top" class="footer-brand__logo" aria-label="Rizwan Foods home">
+          <img src="assets/logo/logo.png" alt="Rizwan Foods — Homemade Delights" width="100" height="100" loading="lazy">
+        </a>
+        <p class="footer-brand__tagline">Where Taste Meets Art.</p>
+        <p>Homemade delights, prepared with care.</p>
+      </div>
+      <div class="footer-links">
+        <h2>Quick links</h2>
+        <a href="#top">Home</a>
+        <a href="#menu-sections">Explore menu</a>
+        <a href="#menu-categories">Food categories</a>
+      </div>
+      <div class="footer-links footer-links--categories">
+        <h2>Categories</h2>
+        <div id="footer-category-links"></div>
+      </div>
+      <div class="footer-contact">
+        <h2>Say hello</h2>
+        <a href="tel:+923432708942">0343 2708942</a>
+        <a href="https://wa.me/923432708942?text=Hello%20Rizwan%20Foods%2C%20I%20would%20like%20to%20place%20an%20order." target="_blank" rel="noopener noreferrer">WhatsApp Rizwan Foods ↗</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container footer-bottom__inner">
+        <span>© <span id="current-year"></span> Rizwan Foods. All rights reserved.</span>
+        <span>Homemade Delights</span>
+        <a href="#top">Back to top ↑</a>
+      </div>
+    </div>
+  </footer>
+
+  <div class="modal" id="food-modal" aria-hidden="true">
+    <button class="modal__backdrop" type="button" aria-label="Close food details" data-modal-close></button>
+    <section class="modal__dialog" role="dialog" aria-modal="true" aria-labelledby="modal-title" tabindex="-1">
+      <button class="modal__close" type="button" aria-label="Close food details" data-modal-close>×</button>
+      <div class="modal__image-wrap">
+        <img class="modal__image" id="modal-image" alt="" hidden>
+        <div class="image-fallback modal__fallback" aria-hidden="true">
+          <span class="image-fallback__plate"></span>
+          <span class="image-fallback__label">Food photo coming soon</span>
+        </div>
+      </div>
+      <div class="modal__content">
+        <p class="eyebrow eyebrow--green"><span></span> RIZWAN FOODS MENU</p>
+        <p class="modal__category" id="modal-category"></p>
+        <h2 id="modal-title"></h2>
+        <p class="modal__price" id="modal-price" hidden></p>
+        <div class="modal__field" id="modal-description-field" hidden>
+          <h3>Description</h3>
+          <p id="modal-description"></p>
+        </div>
+        <div class="modal__field" id="modal-ingredients-field" hidden>
+          <h3>Common ingredients</h3>
+          <p class="modal__ingredient-note">Typical recipe ingredients; the exact recipe may vary. Please confirm allergens with us.</p>
+          <ul class="modal__ingredient-list" id="modal-ingredients"></ul>
+        </div>
+        <div class="modal__field" id="modal-preparation-field" hidden>
+          <h3>Preparation</h3>
+          <p id="modal-preparation"></p>
+        </div>
+        <div class="modal__field" id="modal-serving-field" hidden>
+          <h3>Serving</h3>
+          <p id="modal-serving"></p>
+        </div>
+        <a class="button button--green modal__order" id="modal-order" href="https://wa.me/923432708942" target="_blank" rel="noopener noreferrer">Order on WhatsApp <span aria-hidden="true">↗</span></a>
+      </div>
+    </section>
+  </div>
+</body>
+</html>
