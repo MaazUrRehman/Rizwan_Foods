@@ -105,12 +105,6 @@ const menuData = [
         ingredients: ["Chicken or meat", "Tomatoes", "Ginger and garlic", "Green chilies", "Red chili, cumin, coriander and salt", "Cooking oil, fresh ginger and coriander"]
       },
       {
-        id: "white-karahi",
-        name: "White Karahi",
-        image: assetMap.categories.kadhai[1],
-        ingredients: ["Chicken", "Yogurt and cream", "Ginger and garlic", "Green chilies", "Black and white pepper", "Cumin, coriander, salt and cooking oil"]
-      },
-      {
         id: "balochi-karahi",
         name: "Balochi Karahi",
         image: assetMap.categories.kadhai[2],
@@ -210,8 +204,8 @@ const menuData = [
         ingredients: ["Yogurt", "Gram flour (besan)", "Onion", "Turmeric and chili", "Cumin and other tempering spices", "Oil; pakora batter may be included"]
       },
       {
-        id: "qorma",
-        name: "Qorma",
+        id: "nalli-nihari",
+        name: "Nalli Nihari",
         image: assetMap.categories["regional-delights"][2],
         ingredients: ["Chicken or meat", "Yogurt", "Fried onion", "Ginger and garlic", "Cardamom, cinnamon and cloves", "Oil or ghee, chili and salt"]
       },
@@ -326,7 +320,27 @@ const menuData = [
         name: "Sweet Chaat",
         image: assetMap.categories["sweet-dishes"][2],
         ingredients: ["Boiled chickpeas and potato", "Yogurt", "Sweet or tamarind chutney", "Chaat masala and spices", "Fruit pieces may be included", "Fresh coriander"]
-      }
+      },
+      {
+        id: "dahi-barey",
+        name: "Dahi Barey",
+        image: assetMap.categories.kadhai[1],
+        ingredients: [
+          "Mash daal (Urad daal)",
+          "Yogurt (Dahi)",
+          "Gram flour (Besan)",
+          "Green chilies",
+          "Ginger",
+          "Cumin seeds",
+          "Red chili powder",
+          "Chaat masala",
+          "Salt",
+          "Sugar",
+          "Baking soda",
+          "Cooking oil",
+          "Tamarind chutney"
+        ]
+      },
     ]
   }
 ];
