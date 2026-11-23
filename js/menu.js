@@ -304,8 +304,8 @@ const menuData = [
     description: "Finish your meal with something sweet.",
     items: [
       {
-        id: "fruit-custard",
-        name: "Fruit Custard",
+        id: "jelly-delight",
+        name: "Jelly Delight",
         image: assetMap.categories["sweet-dishes"][0],
         ingredients: ["Milk", "Custard powder", "Sugar", "Seasonal fruit pieces"]
       },
